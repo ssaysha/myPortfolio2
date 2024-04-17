@@ -1,0 +1,467 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {  background-color: aliceblue;
+        margin: 0;
+}
+header {
+    width: 100%;
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    margin: 0;
+    padding: 5px 50px 5px 50px;
+    .left {
+        height: 100%;
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    .me {
+        color: aliceblue;
+        font-size: 45px;
+        font-weight: 900;
+        margin-left: -65px; 
+    }
+            #menu {
+                visibility: hidden;
+                width: 70px;
+                height: 60px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: dodgerblue;
+                border: none;
+                border-radius: 5px;
+                padding: 0 5px 0 5px;
+                div {
+                    border-bottom: 4px solid aliceblue;
+                    width: 50px;
+                    margin: 5px auto;
+                    
+                }
+            }
+            
+        }
+    #nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+        height: 100%;
+        button {
+            width: 20%;
+            height: 50px;
+            border: none;
+            background-color: dodgerblue;
+            font-size: 17px;
+            font-weight: 700;
+            a {
+                text-decoration: none;
+                color: aliceblue;
+                cursor: pointer;
+            }
+        }
+        button:hover {
+            background-color: red;
+        }
+        .home {
+            border: 5px solid red;
+        }
+    }
+}
+
+// .menu:hover {
+//     .nav {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         align-items: center;
+//         width: 70px;
+//         height: 100px;
+//         padding: 10px;
+//         background-color: dodgerblue;
+//         button {
+//             height: 20%;
+//             width: 50px;
+//             border-bottom: 2px solid aliceblue;
+//             margin: 5px 0;
+//             color: aliceblue;
+//             font-size: 13px;
+//             font-weight: 500;
+//         }
+    // }
+// }
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;    
+    height: fit-content;
+    padding: 0 50px 0 50px;
+}
+.secOne {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .myPic {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        img {
+            width: 250px;
+            height: 250px;
+            border: 9px solid blue;
+            border-radius: 50%; 
+        }
+    }
+    .right { 
+     width: 60%;
+     height: 90%;
+     border: 5px solid aliceblue;     
+     border-radius: 10px;
+     background-color: dodgerblue;   
+     box-shadow: 20px 20px 15px dodgerblue;
+     z-index: 2;
+     color: aliceblue; 
+     font-size: 19px;  
+     font-weight: 500; 
+     margin: 0 50px;
+     padding: 10px;
+     p {line-height: 2rem;}
+     .aisha {
+        color: blue;
+        font-weight: 700;
+     }
+    }
+}
+.grid-container {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    margin: 30px 0 0;
+    padding: 15px 0 15px 0;
+.grid-item {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    padding: 15px;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(to right, dodgerblue, blue);
+    box-shadow: 7px 7px 5px dodgerblue;
+    color: beige;
+    font-size: 19px;
+    font-weight: 500;
+    
+}
+}
+.grid-item:hover {
+    color: red;
+    transform: translateY(5px);
+}
+footer {
+    background-color: blue;
+    color: beige;
+    font-size: 21px;
+    font-weight: 500;
+    text-align: center;
+    padding: 15px 50px 15px 50px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .links {
+        margin: 0 20px;
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 50%;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .linkedin {
+        width: 100px;
+        border-radius: 30px;
+        a {
+        text-decoration: none;
+        color: blue;
+    }
+}
+.links:hover {
+    background-color: red;
+    transform: translateY(5px);
+}
+}
+
+// media query
+@media screen and (min-width: 150px) and (max-width: 250px){
+    header {
+        .left { 
+            #menu {
+                visibility: visible;
+                width: 30px;
+                height: 30px;
+                margin-left: -35px;
+                div {
+                    width: 20px;
+                   border-bottom: 2px solid aliceblue;
+                   margin: 3px auto;
+                }
+            }
+             .me {
+            margin-left: 15px;
+            font-size: 17px;
+             }
+        }
+        #nav button {visibility: hidden;}
+    }
+    .main {
+        width: 100%;
+        height: fit-content;
+        margin: 0;
+        padding: 10px;
+    }
+    .secOne {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0 10px 0;
+        .myPic {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: fit-content;
+            margin: 20px auto;
+            img {
+                width: 125px;
+                height: 125px;
+                border: 5px solid blue;
+            }
+        }
+        .right { 
+            margin: 15px 0;
+            width: 90%;
+            height: fit-content;
+            border-radius: 30px;
+            padding: 5px;
+            p {
+                  font-size: 13px;
+            }
+        }
+    }
+    .grid-container {
+        width: 100%;
+        height: fit-content;
+    .grid-item {
+       font-size: 16px;
+    }
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        .links {
+            width: 20px;
+            height: 20px;
+            margin: 10px 0 0;
+        img {
+            width: 13px;
+            height: 13px;
+        }
+    }
+    .linkedin {
+        width: 75px;
+        height: 30px;
+        font-size: 15px;
+    }
+    } 
+}
+@media only screen and (min-width: 251px) and (max-width: 850px) {
+    .main {
+        width: 100%;
+        height: fit-content;
+    }
+    .secOne {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0 10px 0;
+        .myPic {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: fit-content;
+            margin: 20px auto;
+            img {
+                width: 145px;
+                height: 145px;
+                border: 5px solid blue;
+            }
+        }
+        .right { 
+            margin: 15px 0;
+            width: 90%;
+            height: fit-content;
+            border-radius: 30px;
+            padding: 15px;
+            p {
+                  font-size: 15px;
+            }
+        }
+    }
+    .grid-container {
+        width: 100%;
+        height: fit-content;
+    .grid-item {
+       font-size: 16px;
+    }
+    }
+}
+@media only screen and (min-width: 251px) and (max-width: 450px) {
+header {
+    .left { 
+        #menu {
+            visibility: visible;
+            width: 40px;
+            height: 40px;
+            div {
+                width: 30px;
+                border-bottom: 2px solid aliceblue;
+            }
+        }
+         .me {
+        margin-left: 15px;
+        font-size: 19px;
+         }
+    }
+    #nav button {visibility: hidden;}
+}
+// .menu:hover {
+//     header{background-color: red;}
+//     .nav {
+//         visibility: visible;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         align-items: center;
+//         width: 70px;
+//         height: 100px;
+//         padding: 10px;
+//         background-color: dodgerblue;
+//         button {
+//             height: 20%;
+//             width: 50px;
+//             border-bottom: 2px solid aliceblue;
+//             margin: 5px 0;
+//             color: aliceblue;
+//             font-size: 13px;
+//             font-weight: 500;
+//         }
+//     }
+// }
+footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        margin: 20px 0 0;
+        font-size: 27px;
+        .links {
+            margin: 5px 0;
+        }
+    }
+}
+@media only screen and (min-width: 451px) and (max-width: 750px) {
+    header {  
+        .left{ width: 25%;
+            #menu {
+                visibility: hidden;
+            }
+            .me {
+                font-size: 17px;   
+                margin-left: -65px;
+        }
+    }
+        #nav {width: 75%;
+             button {
+            visibility: visible;
+            height: 30px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+    }
+    }
+    .grid-container {
+        width: 100%;
+        height: fit-content;
+        padding: 15px 0 15px 0;
+    }
+    footer {
+        .links {
+            width: 20px;
+            height: 20px;
+        img {
+            width: 13px;
+            height: 13px;
+        }
+    }
+    .linkedin {
+        width: 75px;
+        height: 30px;
+        font-size: 15px;
+    }
+    }
+}
+@media only screen and (min-width: 751px) and (max-width: 850px) {
+    header {
+           .left {
+            .me {
+                font-size: 35px;  
+        }
+    }
+        #nav {
+             button {
+            font-size: 15px;
+            font-weight: 500;
+          
+        }
+    }
+    }
+}

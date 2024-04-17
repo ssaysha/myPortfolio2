@@ -1,0 +1,393 @@
+body {
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  opacity: 0.9;
+  box-shadow: 10px;
+  opacity: 0.7;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: auto;
+  height: 100px;
+  margin-right: 75px;
+  margin-left: 100px;
+}
+.owner {
+  position: fixed;
+  top: 150px;
+  padding: 10px 10px 10px 50px;
+  width: 45%;
+  height: fit-content;
+  border: none;
+  border-radius: 0 50px 50px 0;
+  background-image: linear-gradient(to right, green, yellowgreen);
+  color:  snow;
+  font-size: 17px;
+  font-weight: 700;
+  z-index: 1;
+  a {
+      text-decoration: none;
+      color: plum;
+      font-size: 21px;
+  }
+  }
+.nav {
+  display: inline-block;
+}
+.nav a {
+  float: left;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0 10px;
+  color: black;
+}
+a#home {
+  color: green;
+}
+.logo img {
+  width: 150px;
+  height: 100px;
+  border: none;
+  border-radius: 50px;
+}
+.virus-left {
+  top: 200px;
+  left: 0%;
+  position: absolute;
+}
+.covid-alert {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  margin-right: 75px;
+  margin-left: 100px;
+}
+.right {
+  width: 50%;
+  height: auto;
+}
+.left-alert {
+  width: 50%;
+  height: auto;
+}
+.alert {
+  display: flex;
+  flex-direction: row;
+}
+.the-alert {
+  color: red;
+  margin-left: 10px;
+}
+.help {
+  width: 150px;
+  height: 50px;
+  background-color: green;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.right {
+  width: 50%;
+}
+.right img,
+.left img {
+  width: 400px;
+  height: 450px;
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  background-color: white;
+}
+.cases {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.Total,
+.Active,
+.Recovered,
+.Deaths {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.virus-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.what-do-we-do {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  margin-right: 75px;
+  margin-left: 100px;
+  margin-top: -100px;
+}
+.left-we-do {
+  width: 50%;
+}
+
+.doctor {
+  width: 500px;
+  height: 450px;
+}
+.contactus {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: -545px;
+  margin-top: 20px;
+}
+.arrow-text1 {
+  border-top: 2px solid green;
+  border-bottom: 2px solid green;
+  border-left: 2px solid green;
+  border-right: 2px solid white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.patient {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+}
+.patient img {
+  width: 30px;
+  height: 30px;
+}
+#green {
+  color: green;
+}
+#red {
+  color: red;
+}
+.update {
+  text-align: center;
+}
+.prevention {
+  text-align: center;
+}
+.pictures {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 350px;
+  margin-right: 75px;
+  margin-left: 100px;
+}
+.mask {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 230px;
+  width: 280px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+}
+#h1 {
+  text-align: center;
+}
+.mask img {
+  width: 150px;
+  height: 150px;
+  margin-top: -100px;
+}
+.p-mask {
+  margin-top: -15px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.symptoms,
+.need-help {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.symptoms-text,
+.need-help-text {
+  text-align: center;
+}
+.symptoms-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: 500px;
+}
+.doc-standing {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 33.33%;
+}
+.circular-virus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+  margin-left: -59px;
+}
+.long-virus {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 33.33%;
+}
+.stay-safe {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 21px;
+  margin-right: 75px;
+  margin-left: 75px;
+}
+.need-help-img img {
+  width: 100%;
+  height: 400px;
+}
+.doctors-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+}
+.doctors-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+}
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+.doctors-data {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.horizontal1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 40px;
+  background-color: white;
+  margin-top: 10px;
+}
+.number {
+  width: 25px;
+  height: 25px;
+  margin-top: 23px;
+  margin-right: 15px;
+}
+#click-to-send {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: -300px;
+  margin-top: 10px;
+}
+.click {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid yellowgreen;
+  border-left: 2px solid yellowgreen;
+  border-bottom: 2px solid yellowgreen;
+  border-right: 2px solid white;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+.blocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -700px;
+}
+.block1 {
+  width: 100px;
+  height: 600px;
+  background-color: lightgreen;
+  margin-top: 100px;
+  border-top-right-radius: 50%;
+}
+.block2 {
+  width: 100px;
+  height: 700px;
+  background-color: lightgreen;
+  border-top-left-radius: 75%;
+}
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: lightgreen;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.myname {
+  padding-left: 100px;
+}
+.back-to-top {
+  padding-right: 100px;
+}
+.border-bottom {
+  border-bottom: 3px solid green;
+}
+.bottom-span2 {
+  border-bottom: 3px solid green;
+}
+.border-bottom3 {
+  border-bottom: 3px solid green;
+}
+.border-bottom4 {
+  border-bottom: 3px solid green;
+}
+      

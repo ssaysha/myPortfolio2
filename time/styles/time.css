@@ -1,0 +1,117 @@
+body {
+  width: 100%;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  background-color: peru;
+}
+
+.owner {
+  position: fixed;
+  top: 50px;
+  padding: 10px 10px 10px 50px;
+  width: 35%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: none;
+  border-radius: 0 50px 50px 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(peru), to(goldenrod));
+  background-image: linear-gradient(to right, peru, goldenrod);
+  color: snow;
+  font-size: 17px;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.owner a {
+  text-decoration: none;
+  color: yellow;
+  font-size: 21px;
+}
+
+h1 {
+  color: mistyrose;
+  font-family: monospace;
+  font-size: 49px;
+}
+
+.stopwatch {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 23px;
+  min-width: 50%;
+  height: 70vh;
+  padding-top: 25px;
+  padding: 20px;
+  margin: 50px auto;
+}
+
+.circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 5px solid mistyrose;
+  font-size: 49px;
+  font-weight: 700;
+  font-family: monospace;
+  color: mistyrose;
+  height: 270px;
+  width: 270px;
+  border-radius: 50%;
+}
+
+.controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 187px;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  font-size: 17px;
+  font-weight: 700;
+  color: peru;
+  border: none;
+  color: mistyrose;
+}
+
+#playButton {
+  background-color: green;
+}
+
+#resetButton {
+  background-color: red;
+}
+
+#pauseButton {
+  background-color: goldenrod;
+}
+
+@media screen and (max-width: 320px) {
+  .circle {
+    width: 200px;
+    height: 200px;
+    font-size: 25px;
+  }
+  .controls button {
+    font-size: 13px;
+    width: 50px;
+    height: 20px;
+  }
+}
+/*# sourceMappingURL=time.css.map */

@@ -1,0 +1,72 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.owner {
+    position: fixed;
+    top: 50px;
+    padding: 10px 10px 10px 50px;
+    width: 35%;
+    height: fit-content;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    background-image: linear-gradient(to right, purple, palevioletred);
+    color:  snow;
+    font-size: 17px;
+    font-weight: 700;
+    z-index: 1;
+    a {
+        text-decoration: none;
+        color: red;
+        font-size: 21px;
+    }
+    }
+main {
+    width: 400px;
+    height: 600px;
+    background-color: plum;
+    border: inherit;
+    border-radius: 10px;
+    margin: auto;
+}
+table {
+    margin:  20px auto;
+    border-spacing: 15px;
+    width: 90%;
+    height: 90%;
+    margin: 10% auto;
+}
+#clear {
+    background-color: red;
+    box-shadow: 0 4px 8px 0 purple;
+}
+input[type=text] {
+    background-color: pink;
+    color: purple;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 10px;
+}
+#result {
+    height: 140px;
+    font-size: 21px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    color: purple;
+
+}
+input[type=button] {
+    width: 100%;
+    height: 100%;
+    background-color: purple;
+    color: #fff;
+    outline: purple;
+    box-shadow: 0 4px 8px 0 palevioletred;
+    border-radius: 15px;
+    font-size: 21px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="left">
+        <div id="menu" onclick="menu()">
+        <div></div>
+        <div></div>
+        
+        <div></div>
+        </div>
+        <div class="me">Portfolio</div>
+        </div>
+        <div id="nav">
+            <button class="navItem home" onclick="home()"><a href="#home">Home</a></button>
+            <button class="navItem about"><a href="about.html" target="_top">About</a></button>
+            <button class="navItem contact"><a href="contact.html" target="_top">Contact</a></button>
+            <button class="navItem work" onclick="home()"><a href="#">My Work</a></button>
+        </div>
+    </header>
+    <div class="main">
+    <div class="secOne">
+        <div class="myPic"><img src="img/me.jpg" alt="myPic"></div>
+        <div class="right"><p>Hello,<br>  My name is <sp class="aisha">Aishatu Salisu Suleiman.</sp></p>
+            <p> I am a Frontend Web Developer living in Bauchi, Nigeria.</p> 
+             <p>My Tech Stacks are: HTML, CSS and JS.</p>
+             <p>Check out some of my projects below.</p>
+        </div>
+        </div>
+    <div class="grid-container">
+        <div class="grid-item" onclick="covid19()">Covid-19 Website >></div>
+        <div class="grid-item" onclick="skilledElearning()">Skilled E-learning Website >></div>
+        <div class="grid-item" onclick="form()">Form >></div>
+        <div class="grid-item" onclick="facebook()">A cloned copy of my facebook >></div>
+        <div class="grid-item" onclick="calc()">Calculator >></div>
+        <div class="grid-item" onclick="stopWatch()">Stop Watch >></div>
+    </div>
+    </div>
+    <footer>
+        <div class="links"><a href="https://www.facebook.com/aishatu.salisusuleiman"><img src="img/icon-facebook.svg" alt=""></a></div>
+        <div class="links"><a href="https://www.instagram.com/aishatusalisusuleiman"><img src="img/icon-instagram.svg" alt=""></a></div>
+        <div class="links"><a href="https://twitter.com/SS_Aysha05"><img src="img/icon-twitter.svg" alt=""></a></div>
+        <div class="links"><a href="contact.html"><img src="img/number.png" alt=""></a></div>
+        <div class="links linkedin"><a href="https://www.linkedin.com/in/aishatu-salisu-suleiman-223b47231">linkedin</a></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
